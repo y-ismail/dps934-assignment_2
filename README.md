@@ -1,1 +1,2 @@
-# dps934-assignment_2
+# Assignment 2
+#### Yumit Ismail
