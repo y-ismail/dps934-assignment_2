@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // update the value in quantity and total if product types change
             this.quantity = this.productNumberPicker.getValue();
             this.total = this.selectedProduct.getProductPrice() * this.quantity;
-            this.quantityTextView.setText(String.valueOf(this.quantity));
             this.totalAmount.setText(String.format(getResources().getString(R.string.dollar_amount), df.format(total)));
         });
 
