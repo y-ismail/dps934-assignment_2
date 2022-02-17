@@ -116,8 +116,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 this.productManager.productList.get(this.productManager.productList.indexOf(this.selectedProduct)).updateInventoryQuantity(quantity, false);
                 this.purchaseHistoryManager.purchaseHistories.add(new PurchaseHistory(this.selectedProduct.getProductName(), this.quantity, df.format(total), new Date()));
                 this.adapter.notifyDataSetChanged();
-                this.total = 0.0f;
-                this.quantity = 0;
                 this.selectedProduct = null;
                 this.productNumberPicker.setValue(this.productNumberPicker.getMinValue());
                 this.setDisplayDefaults();
